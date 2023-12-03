@@ -1,0 +1,228 @@
+body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+
+p {
+    font-size: 20px;
+}
+
+hr {
+    border: #FF6D33 solid 5px;
+}
+
+#additional-info-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-item {
+    width: 30%; 
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.left-info {
+    width: 48%; /* Adjust the width */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.right-info {
+    width: 48%; /* Adjust the width */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-left: auto; /* Add auto margin to push it to the right */
+}
+
+
+#additional-info-h3{
+    font-size: 20px;
+    color: #FF6D33;
+}
+
+#additional-info-content-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#left-additional-content,
+#middle-additional-content,
+#right-additional-content {
+    width: 100%;
+    box-sizing: border-box;
+    margin-right: 50px;
+}
+
+#left-additional-content textarea,
+#left-additional-content input,
+#middle-additional-content input,
+#right-additional-content input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+#left-additional-content textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+
+#heart-disease-options,
+#hypertension-options,
+#diabetes-options,
+#bleeding-disorder-options,
+#psychiatric-disorder-options {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+#heart-disease-options label,
+#hypertension-options label,
+#diabetes-options label,
+#bleeding-disorder-options label,
+#psychiatric-disorder-options label {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#heart-disease-options input,
+#hypertension-options input,
+#diabetes-options input,
+#bleeding-disorder-options input,
+#psychiatric-disorder-options input {
+    margin-right: 5px;
+}
+
+
+
+
+#sex-options {
+    display: flex;
+}
+
+#right-content textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+#submit-button {
+    width: 20%;
+    padding: 10px;
+    background-color: #FF6D33;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 75%;
+    
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 1px solid #040404; 
+    border-radius: 5px; 
+    background-color: #ebeaea; 
+}
+
+/* Additional styling for textarea */
+textarea {
+    height: 80px;
+    resize: vertical;
+}
+#note{
+    width: 50%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 1px solid #040404; 
+    border-radius: 5px; 
+    background-color: #ebeaea;
+}
+
+#date1{
+    margin-left: 5%;
+   
+    
+}
+
+
+input[type="file"] {
+    display: none; /* Hide the default file input */
+}
+
+/* Custom button styling */
+#xray-records {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF6D33;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+#choose-xray-img {
+    margin-left: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #FF6D33;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+}
+
+#images-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.uploaded-image {
+    max-width: 100px; 
+    margin: 5px; 
+}
+
+#medicalHistory hr {
+    border-top: 2px solid #333; /* Assuming a contrasting color for the hr */
+  }
+  
+  #medicalHistory h3#additional-info-h3 {
+    color: #FF6D33;
+  }
+  
+  #medicalHistory table {
+    background-color: rgba(255, 109, 51, 0.45);
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 5px; /* Adjust as needed */
+  }
+  
+  #medicalHistory table th,
+  #medicalHistory table td {
+   
+    padding: 2px;
+    text-align: left;
+  }
+
+

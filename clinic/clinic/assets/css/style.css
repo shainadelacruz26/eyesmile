@@ -1,0 +1,286 @@
+body {
+    background: #D7F1F6;
+    padding: 0%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#example_filter{
+    margin-bottom: 20px;
+}
+
+/* Custom styling for DataTables sorting icons */
+.dataTables_wrapper .sorting:before,
+.dataTables_wrapper .sorting_asc:before,
+.dataTables_wrapper .sorting_desc:before {
+    color: #ffffff !important; /* Set the color to white */
+}
+
+
+
+
+table.dataTable thead .sorting_asc::after,
+table.dataTable thead .sorting_desc::after {
+    color: white; /* Change this to your desired color for ascending and descending sorting icons */
+}
+
+
+
+
+
+
+#content-header {
+    margin: 0;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    color: #030303;
+}
+
+#profile-section {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#notification-icon {
+    display: flex;
+    margin-right: 20px;
+    color: #010101;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#user-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#user-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#navbar-toggle {
+    display: flex;
+    cursor: pointer;
+    padding: 15px;
+    width: 30px;
+}
+
+#sidebar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    padding-top: 60px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    transition: left 0.2s ease;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+#sidebar ul li {
+    margin-bottom: 10px;
+}
+
+#sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+#sidebar ul li a i {
+    margin-right: 10px;
+}
+
+#sidebar ul li a img {
+    width: 25px;
+    height: auto;
+    margin-right: 10px;
+}
+
+#sidebar ul li a:hover {
+    background-color: #FF6D33;
+    color: #fff;
+}
+
+#logo {
+    text-align: center;
+    margin-top: -70px;
+}
+
+#logo img {
+    width: 250px;
+    height: auto;
+}
+
+.boxL{
+    background-color: rgba(255, 109, 51, 0.35)
+    ;
+    text-align: center;
+}
+#hrco{
+    border: 2px solid #FF6D33;
+    opacity: 100%;
+}
+#sub{
+    background-color: #FF6D33;
+    color: white;
+}
+#nav-tab button{
+    background-color: lightgray;
+}
+#nav-tab .active{
+    background-color: #f8f9fa;
+}
+
+.group{
+    padding-bottom: 4px;
+}
+.link{
+    margin: 0;
+    margin-bottom: -20px;
+}
+
+.form-control{
+    margin-bottom: 10px;
+}
+
+#button{
+    background-color: #FF6D33;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* TEYBOL*/
+#example th{
+    background-color: #FF5D1CB2;
+    text-align: center;
+    table-layout: auto;
+}
+
+.tbl{
+    background-color: #FF6D33;
+}
+.wrapper {
+  margin-top: 5vh;
+}
+
+
+
+.table-hover > tbody > tr:hover {
+  background-color: #ccffff;
+}
+
+@media only screen and (min-width: 768px) {
+  .table {
+    table-layout: fixed;
+    max-width: 100% !important;
+  }
+}
+
+thead {
+  background: #ddd;
+}
+
+.table td:nth-child(2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.highlight {
+  background: #ffff99;
+}
+
+@media only screen and (max-width: 767px) {
+  /* Force table to not be like tables anymore */
+  table,
+thead,
+tbody,
+th,
+td,
+tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr,
+tfoot tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50% !important;
+  }
+
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  .table td:nth-child(1) {
+    background: #ccc;
+    height: 100%;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+  }
+
+  /*
+  Label the data
+  */
+  td:nth-of-type(1):before {
+    content: "Name";
+  }
+
+  td:nth-of-type(2):before {
+    content: "Position";
+  }
+
+  td:nth-of-type(3):before {
+    content: "Office";
+  }
+
+  td:nth-of-type(4):before {
+    content: "Age";
+  }
+
+  td:nth-of-type(5):before {
+    content: "Start date";
+  }
+
+  td:nth-of-type(6):before {
+    content: "Salary";
+  }
+
+  .dataTables_length {
+    display: none;
+  }
+}

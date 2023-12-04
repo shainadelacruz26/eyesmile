@@ -50,46 +50,6 @@ if (isset($_POST['saveUser'])) {
     }
 }
 
-if (isset($_POST['saveUser'])) {
-    $conn = mysqli_connect("localhost", "root", "", "login_db");
-
-    if (!$conn) {
-        die("Connection failed: " . mysqli_connect_error());
-    }
-
-    $first_name = validateInput($_POST['first_name']);
-    $last_name = validateInput($_POST['last_name']);
-    $email = validateInput($_POST['email']);
-    $pass = validateInput($_POST['pass']);
-    $phone = validateInput($_POST['phone']);
-    $role = validateInput($_POST['role']);
-    $status = validateInput($_POST['status']);
-
-    if ($first_name && $last_name && $email && $pass && $phone && $role && $status) {
-        $query = "INSERT INTO user (first_name, last_name, email, password, phone, user_type, status) VALUES (?, ?, ?, ?, ?, ?, ?)";
-        $stmt = mysqli_prepare($conn, $query);
-
-        if ($stmt) {
-            mysqli_stmt_bind_param($stmt, "sssssss", $first_name, $last_name, $email, $pass, $phone, $role, $status);
-
-            $result = mysqli_stmt_execute($stmt);
-
-            if ($result) {
-                redirect('users.php', 'User/Admin added successfully');
-            } else {
-                redirect('users-create.php', 'Something went wrong');
-            }
-        } else {
-            redirect('users-create.php', 'Prepared statement error');
-        }
-
-        mysqli_stmt_close($stmt);
-    } else {
-        redirect('users-create.php', 'Please fill all the input fields');
-    }
-
-    mysqli_close($conn);
-}
 
 if (isset($_POST['updateUser'])) {
     $conn = mysqli_connect("localhost", "root", "", "login_db");
